@@ -3,7 +3,7 @@
 /**
  * print_diagonal - printing lines diagonal
  * @n: input variable
- *
+ * abdennuur
  * Return: void
  */
 

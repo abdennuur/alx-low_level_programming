@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * swap_int - swaps the values of two integers
@@ -7,9 +7,9 @@ i#include "main.h"
  */
 void swap_int(int *a, int *b)
 {
-	int c;
+	int tmp;
 
-	c = *a;
+	tmp = *a;
 	*a = *b;
-	*b = c;
+	*b = tmp;
 }

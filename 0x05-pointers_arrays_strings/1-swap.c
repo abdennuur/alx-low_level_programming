@@ -7,9 +7,9 @@ i#include "main.h"
  */
 void swap_int(int *a, int *b)
 {
-	int tmp;
+	int c;
 
-	tmp = *a;
+	c = *a;
 	*a = *b;
-	*b = tmp;
+	*b = c;
 }

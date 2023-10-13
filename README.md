@@ -34,7 +34,7 @@ algorithm section .
 * [0x0C. C - more malloc, free](./0x0C-more_malloc_free)
 * [0x0D. C - preprocessor](./0x0D-preprocessor)
 * [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
-* [0x0F. C - Variadic functions](./0x0F-variadic_functions)
+* [0x0F. C - function_pointers](./0x0F-function_pointers/)
 * [0x1A. C - Hash tables](./0x1A-hash_tables)
 * [0x1B. C - Sorting algorithms & Big O ](./0x1B-sorting_algorithms)
 * [0x1C. C - Makefiles](./0x1C-makefiles)

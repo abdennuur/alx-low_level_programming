@@ -44,7 +44,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		for (j = 0; j < num; j++)
 		{
-			if (head == list[i])
+			if (head == list[j])
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
 				free(list);

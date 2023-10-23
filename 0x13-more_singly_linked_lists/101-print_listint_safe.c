@@ -6,14 +6,14 @@
  * _r - reallocates memmory for an array of ptrs
  * to the nodes in linked lst
  * @list: old lst to append
- * @size: size of  new lst "always one more than old list"
+ * @size: size of  new lst (always one more than old list)
  * @new: new node to add to lst
  *
  * Return: ptr to new lst
  */
 const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
-	const lsint_t **nwls;
+	const listint_t **nwls;
 	size_t j;
 
 	nwls = malloc(size * sizeof(listint_t *));
@@ -23,7 +23,7 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 		exit(98);
 	}
 	for (j = 0; j < size - 1; j++)
-		nwlt[i] = list[i];
+		nwls[i] = list[i];
 	nwls[i] = new;
 	free(list);
 	return (nwls);
@@ -42,7 +42,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	while (head != NULL)
 	{
-		for (j = 0; j < num; j++)
+		for (j = 0; j < nm; j++)
 		{
 			if (head == list[j])
 			{

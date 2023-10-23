@@ -23,8 +23,8 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 		exit(98);
 	}
 	for (j = 0; j < size - 1; j++)
-		nwls[i] = list[i];
-	nwls[i] = new;
+		nwls[j] = list[j];
+	nwls[j] = new;
 	free(list);
 	return (nwls);
 }

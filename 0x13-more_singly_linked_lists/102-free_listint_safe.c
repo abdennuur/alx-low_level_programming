@@ -23,7 +23,7 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 		exit(98);
 	}
 	for (j = 0; j < size - 1; j++)
-		newlist[j] = list[j];
+		nwls[j] = list[j];
 	nwls[j] = new;
 	free(list);
 	return (nwls);

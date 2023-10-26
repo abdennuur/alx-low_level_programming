@@ -8,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 unsigned int d = 0;
-int st_len = 0, b = 1;
+int st_len = 0, bs = 1;
 
 if (!check_valid_string(b))
 return (0);
@@ -18,8 +18,8 @@ st_len++;
 
 while (st_len)
 {
-d += ((b[st_len - 1] - '0') * b);
-b *= 2;
+d += ((b[st_len - 1] - '0') * bs);
+bs *= 2;
 st_len--;
 }
 return (d);

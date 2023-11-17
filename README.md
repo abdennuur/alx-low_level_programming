@@ -80,7 +80,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Author
 
-* **abdennour khatib** <[abdennuur] https://[github.com/abdennuur]>
+* **abdennour khatib** <[abdennuur](https://[github.com/abdennuur)>
 
 ## Aknowledgements
 

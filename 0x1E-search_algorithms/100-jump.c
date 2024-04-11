@@ -1,5 +1,4 @@
 #include "search_algos.h"
-#include <math.h>
 
 /**
  * jump_search - fnction to searches for  value
@@ -20,7 +19,7 @@ int jump_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	while (array[prv] < value && prv < size)
+	while (prv < size && array[prv] < value)
 	{
 		printf("Value checked array[%ld] = [%d]\n", prv, array[prv]);
 		prv += stp;

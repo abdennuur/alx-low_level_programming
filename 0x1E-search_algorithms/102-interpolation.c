@@ -23,7 +23,10 @@ int interpolation_search(int *array, size_t size, int value)
 		{
 			printf("Value checked array [%lu] = [%d]\n", ix, array[ix]);
 			if (array[ix] == value)
+			{
+				printf("Found %d at index: %lu\n", value, ix);
 				return (ix);
+			}
 			if (array[ix] > value)
 				rt = ix - 1;
 			else
@@ -32,7 +35,7 @@ int interpolation_search(int *array, size_t size, int value)
 		else
 		{
 			printf("Value checked array [%lu] is out of range\n", ix);
-			break;
+			return (-1);
 		}
 
 	}

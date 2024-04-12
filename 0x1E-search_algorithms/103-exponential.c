@@ -60,7 +60,7 @@ int exponential_search(int *array, size_t size, int value)
 	if (array[0] != value)
 	{
 		for (ix = 1; ix < size && array[ix] <= value; ix *= 2)
-			printf("Value checked array [ %ld] = [%d]\n", ix, array[ix]);
+			printf("Value checked array [%ld] = [%d]\n", ix, array[ix]);
 	}
 
 	rght = ix < size ? ix : size - 1;

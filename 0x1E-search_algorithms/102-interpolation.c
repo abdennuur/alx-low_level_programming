@@ -11,7 +11,6 @@
 int interpolation_search(int *array, size_t size, int value)
 {
 	size_t low = 0, high = size - 1, pos;
-	int found = 0;
 
 	if (array == NULL || size == 0)
 		return (-1);
@@ -24,15 +23,15 @@ int interpolation_search(int *array, size_t size, int value)
 		if (array[pos] == value)
 		{
 			printf("Found %d at index: %ld\n", value, pos);
-			found = 1;
-			break;
+			return (pos);
 		}
 		if (array[pos] < value)
 			low = pos + 1;
 		else
 			high = pos - 1;
 	}
-	if (!found)
+
+	if (low <= high)
 		printf("Value %d is not present in the array\n", value);
-	return (found ? (int)pos : -1);
+	return (-1);
 }

@@ -1,9 +1,9 @@
-nclude "search_algos.h"
+#include "search_algos.h"
 
 
 
 /**
- * _binary_search - to search for value in sorted array of ints
+ * binary_search - to search for value in sorted array of ints
  * using binary search
  * @array: array of ints
  * @left: Lft element

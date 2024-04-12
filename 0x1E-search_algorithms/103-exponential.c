@@ -3,7 +3,7 @@
 
 
 /**
- * binary_search - to search for value in sorted array of ints
+ * _binary_search - to search for value in sorted array of ints
  * using binary search
  * @array: array of ints
  * @left: Lft element
